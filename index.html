@@ -3,8 +3,70 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ImageSwitcher</title>
+	<style type="text/css">
+		#box {
+			position: relative;
+			width: 400px;
+			height: 300px;
+			margin: 200px auto;
+			border: 1px solid #000;
+			overflow: hidden;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#list1 {
+			width: 700%;
+			height: 300px;
+			border: 1px solid #000;
+			z-index: 111;
+		}
+		#list2 {
+			width: 400px;
+			height: 200%;
+			border: 1px solid #000;
+		}
+		li {
+			width: 400px;
+			height: 300px;
+		}
+		#list1 li {
+			float: left;
+		}
+		img {
+			width: 400px;
+			height: 300px;
+			vertical-align: top;
+		}
+	</style>
 </head>
 <body>
-	
+	<div id="box">
+		<ul id="list1">
+			<li><img src="img/1.jpg"></li>
+			<li><img src="img/2.jpg"></li>
+			<li><img src="img/3.jpg"></li>
+			<li><img src="img/4.jpg"></li>
+			<li><img src="img/5.jpg"></li>
+			<li><img src="img/6.jpg"></li>
+			<li><img src="img/1.jpg"></li>
+		</ul>
+		<ul id="list2">
+			<li><img src="img/1.jpg"></li>
+			<li><img src="img/2.jpg"></li>
+			<li><img src="img/3.jpg"></li>
+			<li><img src="img/4.jpg"></li>
+			<li><img src="img/5.jpg"></li>
+			<li><img src="img/6.jpg"></li>
+			<li><img src="img/1.jpg"></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src='js/public.js'></script>
+	<script type="text/javascript" src = 'js/ImageSwitcher.js'></script>
 </body>
 </html>
