@@ -45,7 +45,7 @@
 			list2.style.zIndex = 22;
 			if (n>=lis1.length-1) {
 				n = 0;
-				css(list1,'left',0)
+				css(list2,'top',0)
 			}
 			n++;
 			mTween(list1,{left:-n*lisW},500,'easeOut')
